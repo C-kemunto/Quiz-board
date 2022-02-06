@@ -19,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <section class="landing-page">
+    <section class="landing-page hide">
       <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
         <a class="navbar-brand" href="#">Fun Quiz</a>
         <!-- minimize the size of the nav bar -->
@@ -52,74 +52,134 @@
         </div>
       </nav>
       <div class="home-text">
+        <div>
           <div>
-              <div>
-                  <h2>Let's have fun with <br>JavaScript</h2>
-                  <button class="btn navbar-bg py-3 px-4 text-white mt-3" >START</button>YOU HAVE BEEN HACKED!!
-                  
-              </div>
+            <h2>Let's have fun with <br />JavaScript</h2>
+            <button class="btn navbar-bg py-3 px-4 text-white mt-3">
+              START
+            </button>
           </div>
+        </div>
       </div>
     </section>
-    
+    <section class="questionnaire landing-page">
+      <div class="container">
+        <form id="quizForm">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>The external JavaScript file must contain the script tag?</h3>
+                    <input class="mb-3" type="radio" name="q1" value="true" />True<br />
+                    <input class="mb-3" type="radio" name="q1" value="false" />False<br />
+                  </div>
+                </div>
+
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>How do you create a function in Javascript?</h3>
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q2"
+                      value="function = myfuction()"
+                    />function = myfuction()<br />
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q2"
+                      value="function myFunction()"
+                    />function myFunction()<br />
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q2"
+                      value="function:myFunction()"
+                    />function:myFunction()<br />
+                  </div>
+                </div>
+
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>Where is the correct place to insert a JavaScript?</h3>
+                    <input class="mb-3" type="radio" name="q3" value="both" />Both the head
+                    section and the body section are correct <br />
+                    <input class="mb-3" type="radio" name="q3" value="head" />The head section
+                    <br />
+                    <input class="mb-3" type="radio" name="q3" value="body" />The body section
+                    <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>Inside which HTML element do we put the JavaScript?</h3>
+                    <input class="mb-3" type="radio" name="q4" value="script" />Script <br />
+                    <input class="mb-3" type="radio" name="q4" value="JavaScript" />JavaScript
+                    <br />
+                    <input class="mb-3" type="radio" name="q4" value="js" />js <br />
+                  </div>
+                </div>
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>
+                      What is the correct syntax for referring to an external script called
+                      "xxx.js"?
+                    </h3>
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q5"
+                      value="script href='xxx.js'"
+                    />script href='xxx.js'<br />
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q5"
+                      value="script src='xxx.js'"
+                    />script src='xxx.js'<br />
+                    <input
+                      class="mb-3"
+                      type="radio"
+                      name="q5"
+                      value="script name='xxx.js'"
+                    />script name='xxx.js'<br />
+                  </div>
+                </div>
+                <div class="card my-3">
+                  <div class="card-body">
+                    <h3>How to write an IF statement in JavaScript?</h3>
+                    <input class="mb-5" type="radio" name="q6" value="if(i==5)" />if(i==5)
+                    <input class="mb-5" type="radio" name="q6" value="if i=5" />if i=5
+                    <input class="mb-5" type="radio" name="q6" value="if i=5 then" />if i=5
+                    then <br />
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+              </div>
+            </div>
+            
+          </div>
+          
+        </form>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
 
-<!-- <section class="landing-page">
-        <div class="navbar">
-            <div class="page-name">
-                <h3><a href="quiz">Fun Quiz</a></h3>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="hero">
-            <p>Let's have fun with JavaScript!!</p>
-            <button class="btn">Start</button>
-        </div>
-    </section>
-    <section class="questionnaire">
-        <form id="quizForm">
-            <h3>The external JavaScript file must contain the script tag? </h3>
-            <input type="radio" name="q1" value="true">True
-            <input type="radio" name="q1" value="false">False
 
-            <h3>How do you create a function in Javascript?</h3>
-            <input type="radio" name="q2" value="function = myfuction()">function = myfuction()
-            <input type="radio" name="q2" value="function myFunction()">function myFunction()
-            <input type="radio" name="q2" value="function:myFunction()">function:myFunction()
+  
 
-            <h3>Where is the correct place to insert a JavaScript?</h3>
-            <input type="radio" name="q3" value="both">Both the head section and the body section are correct
-            <input type="radio" name="q3" value="head">The head section
-            <input type="radio" name="q3" value="body">The body section
+  
+  
+  
 
-            <h3>Inside which HTML element do we put the JavaScript?</h3>
-            <input type="radio" name="q4" value="script">Script 
-            <input type="radio" name="q4" value="JavaScript">JavaScript
-            <input type="radio" name="q4" value="js">js
-
-            <h3>What is the correct syntax for referring to an external script called "xxx.js"?</h3>
-            <input type="radio" name="q5" value="script href='xxx.js'">script href='xxx.js'
-            <input type="radio" name="q5" value="script src='xxx.js'">script src='xxx.js'
-            <input type="radio" name="q5" value="script name='xxx.js'">script name='xxx.js'
-
-            <h3>How to write an IF statement in JavaScript?</h3>
-            <input type="radio" name="q6" value="if(i==5)">if(i==5)
-            <input type="radio" name="q6" value="if i=5">if i=5
-            <input type="radio" name="q6" value="if i=5 then">if i=5 then
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <section class="score">
-        <div class="marks">
-            <p class="result">Your score!!</p>
-            <button type="submit">Retake Quiz</button>
-        </div>
-    </section> -->
+  
