@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-board</title>
+    <link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="landing-page">
+        <div class="navbar">
+            <div class="page-name">
+                <h3><a href="quiz">Fun Quiz</a></h3>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <p>Let's have fun with JavaScript!!</p>
+            <button class="btn">Start</button>
+        </div>
+    </section>
+    <section class="questionnaire">
+        <form id="quizForm">
+            <h3>The external JavaScript file must contain the script tag? </h3>
+            <input type="radio" name="q1" value="true">True
+            <input type="radio" name="q1" value="false">False
+
+            <h3>How do you create a function in Javascript?</h3>
+            <input type="radio" name="q2" value="function = myfuction()">function = myfuction()
+            <input type="radio" name="q2" value="function myFunction()">function myFunction()
+            <input type="radio" name="q2" value="function:myFunction()">function:myFunction()
+
+            <h3>Where is the correct place to insert a JavaScript?</h3>
+            <input type="radio" name="q3" value="both">Both the head section and the body section are correct
+            <input type="radio" name="q3" value="head">The head section
+            <input type="radio" name="q3" value="body">The body section
+
+            <h3>Inside which HTML element do we put the JavaScript?</h3>
+            <input type="radio" name="element" value="script">Script 
+            <input type="radio" name="element" value="JavaScript">JavaScript
+            <input type="radio" name="element" value="js">js
+
+            <h3>What is the correct syntax for referring to an external script called "xxx.js"?</h3>
+            <input type="radio" name="syntax" value="script href='xxx.js'">script href='xxx.js'
+            <input type="radio" name="syntax" value="script src='xxx.js'">script src='xxx.js'
+            <input type="radio" name="syntax" value="script name='xxx.js'">script name='xxx.js'
+
+            <h3>How to write an IF statement in JavaScript?</h3>
+            <input type="radio" name="IF" value="if(i==5)">if(i==5)
+            <input type="radio" name="IF" value="if i=5">if i=5
+            <input type="radio" name="IF" value="if i=5 then">if i=5 then
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="score">
+        <div class="marks">
+            <p class="result">Your score!!</p>
+            <button type="submit">Retake Quiz</button>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
