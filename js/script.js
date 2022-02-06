@@ -2,9 +2,9 @@ let correctAnswers = {
   q1: "false",
   q2: "function myFunction()",
   q3: "Both the head section and the body section are correct",
-  element: "script",
-  syntax: "script src='xxx.js'",
-  IF: "if(i==5)",
+  q4: "script",
+  q5: "script src='xxx.js'",
+  q6: "if(i==5)",
 };
 
 let quizForm = document.getElementById("quizForm");
