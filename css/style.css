@@ -12,7 +12,6 @@
 .hero.text{
     font-family: 'recursive';
 }
-
 .home-text {
   position: absolute;
   top: 50%;
@@ -31,8 +30,6 @@
 #quizForm{
     background-color: rgba(160, 154, 154, 0.842);
     padding: 50px;
-
-
 }
 .card-body{
     border-radius: 6px;
