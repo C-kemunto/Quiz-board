@@ -1,5 +1,9 @@
 .landing-page {
-  background: linear-gradient(rgba(131, 128, 128, 0.678),rgba(131, 128, 128, 0.678)),url(../images/unsplash.jpg);
+  background: linear-gradient(
+      rgba(131, 128, 128, 0.678),
+      rgba(131, 128, 128, 0.678)
+    ),
+    url(../images/unsplash.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -9,10 +13,10 @@
 .navbar-bg {
   background-color: #095f5f;
 }
-.hero.text{
-    font-family: 'recursive';
+.hero.text {
+  font-family: "recursive";
 }
-.home-text {
+.home-text,.retake{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,30 +25,31 @@
   text-align: center;
   padding: 100px;
   color: white;
-
 }
-.hide{
-    display: none;
-
+.hide {
+  display: none;
 }
-#quizForm{
-    background-color: rgba(160, 154, 154, 0.842);
-    padding: 50px;
+#quizForm {
+  background-color: rgba(160, 154, 154, 0.842);
+  padding: 50px;
 }
-.card-body{
-    border-radius: 6px;
+.card-body {
+  border-radius: 6px;
 }
-.card-body h3{
-    font-size: 20px;
-    font-weight: 600;
-    
+.card-body h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
-.questionnaire{
-    height: 120vh;
-    background-image: url(../images/unsplash.jpg);
+.questionnaire {
+  height: 120vh;
+  background-image: url(../images/unsplash.jpg);
 }
-.btn{
-    background: #095F5F;
-    color: white
-;
+.btn {
+  background: #095f5f;
+  color: white;
+}
+.score {
+  background-image: url(../images/unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
 }
