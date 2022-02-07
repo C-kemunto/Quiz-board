@@ -5,6 +5,7 @@ startQuiz.addEventListener("click", function (event){
 document.querySelector(".questionnaire").classList.remove("hide");
 
 });
+
 let correctAnswers = {
   q1: "false",
   q2: "function myFunction()",
