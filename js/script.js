@@ -13,7 +13,11 @@ let correctAnswers = {
   q5: "script src='xxx.js'",
   q6: "if(i==5)",
 };
-
+let retakeButton = document.querySelector(".retake-quiz");
+retakeButton.addEventListener("click", function (){
+    document.querySelector(".questionnaire").classList.remove("hide");
+    document.querySelector(".score").classList.add("hide");
+})
 let quizForm = document.getElementById("quizForm");
 
 quizForm.addEventListener("submit", function (event) {
@@ -39,6 +43,8 @@ function comparision(userData) {
   }
 //   let userGrade = grading(score);
 //   alert(userGrade);
+document.querySelector(".questionnaire").classList.add("hide");
+document.querySelector(".score").classList.remove("hide");
   document.querySelector(".result").innerHTML = grading(score);
 }
 
