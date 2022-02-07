@@ -1,3 +1,10 @@
+let startQuiz = document.getElementById("start");
+
+startQuiz.addEventListener("click", function (event){
+    document.querySelector(".landing-page").classList.add("hide");
+document.querySelector(".questionnaire").classList.remove("hide");
+
+});
 let correctAnswers = {
   q1: "false",
   q2: "function myFunction()",
@@ -49,3 +56,4 @@ function grading(actualScore) {
   }
   return `${grade}%: ${message}`
 }
+
